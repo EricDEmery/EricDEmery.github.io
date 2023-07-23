@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from "react"
+import Navbar from './Navbar';
 
 
 export default function App() {
@@ -8,7 +9,8 @@ export default function App() {
   if (page === "Home") {
     return (
       <>
-      
+        <Navbar setPage={setPage}/>
       </>
-)
+    );
+  }
 }
