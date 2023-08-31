@@ -5,8 +5,8 @@ export default function FullscreenComponent() {
     backgroundColor: '#272822',
     color: '#F8F8F2',
     fontFamily: 'Courier New, monospace',
-    fontSize: '1.25rem', // Increase font size for better visibility
-    padding: '1.5rem',
+    fontSize: '1rem', // Adjust font size for better visibility on mobile
+    padding: '1rem',
     borderRadius: '0.25rem',
   };
 
@@ -16,10 +16,10 @@ export default function FullscreenComponent() {
       style={{ backgroundColor: '#1E1E1E', color: '#F8F8F2' }}
     >
       <div className="text-center">
-        <h1 className="display-3 mb-4" style={{ fontFamily: 'Courier New, monospace', color: '#FFD700' }}>
+        <h1 className="display-4 mb-3" style={{ fontFamily: 'Courier New, monospace', color: '#FFD700' }}>
           Eric Emery
         </h1>
-        <h3 className="mb-5" style={{ fontFamily: 'Courier New, monospace', color: '#00CED1' }}>
+        <h3 className="mb-4" style={{ fontFamily: 'Courier New, monospace', color: '#00CED1' }}>
           Full Stack Software Developer
         </h3>
       </div>

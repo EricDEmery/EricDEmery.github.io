@@ -1,30 +1,31 @@
 import React from 'react';
-import Eric from './img/Eric.jpg';
+import Eric from './img/Eric2.jpg';
 
 export default function About() {
   const containerStyle = {
-    backgroundColor: '#222', // Darker theme background color
+    backgroundColor: '#1E1E1E', // Darker theme background color
     height: '100vh', // Set container height to 100% of viewport height
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     color: '#F8F8F2', // Light text color
     fontFamily: 'Courier New, monospace', // Use the code-like font
+
   };
 
   const cardStyle = {
-    width: '80%', // Set the width to 80% for a better layout
+    width: '85%', // Set the width to 80% for a better layout
     maxWidth: '540px',
     borderRadius: '0.25rem',
     transform: 'scale(1.2)',
-    backgroundColor: '#282c34', // Match the code block background color from home page
+    backgroundColor: '#272822',
   };
 
   const cardImgStyle = {
     backgroundImage: `url(${Eric})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '300px', // Set the height of the image container
+    height: '285px', // Set the height of the image container
     width: '100%', // Set the width of the image container
   };
 
@@ -46,12 +47,12 @@ export default function About() {
   return (
     <div style={containerStyle}>
       <div className="card text-center" style={cardStyle}>
-        <div className="row g-0">
+        <div className="row">
           <div className="col-md-4 d-flex align-items-center">
-            <div className="card-img" style={cardImgStyle}></div>
+            <div className="card-img pt-3" style={cardImgStyle}></div>
           </div>
           <div className="col-md-8">
-            <div className="card-body">
+          <div className="card-body" style={{ margin: 0 }}>
               <h5 className="card-title" style={cardTitleStyle}>
                 Eric Emery
               </h5>
@@ -68,5 +69,3 @@ export default function About() {
     </div>
   );
 }
-
-
