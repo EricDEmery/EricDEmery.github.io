@@ -20,9 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "homepage": "https://EricDEmery.github.io/EricDEmery.github.io",
-    "publish": "gh-pages -d src"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

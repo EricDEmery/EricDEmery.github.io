@@ -45,11 +45,12 @@ export default function About() {
   };
 
   return (
-    <div style={containerStyle}>
+    <>
+    <div className="pt-5" style={containerStyle}>
       <div className="card text-center" style={cardStyle}>
         <div className="row">
           <div className="col-md-4 d-flex align-items-center">
-            <div className="card-img pt-3" style={cardImgStyle}></div>
+            <div className="card-img" style={cardImgStyle}></div>
           </div>
           <div className="col-md-8">
           <div className="card-body" style={{ margin: 0 }}>
@@ -62,10 +63,30 @@ export default function About() {
               <p className="card-text" style={cardSecondParaStyle}>
                 All projects included in this portfolio as well as the site itself were developed by yours truly.
               </p>
+              <a href="https://github.com/EricDEmery" className="btn btn-primary">Github</a>
+                <a href="https://www.linkedin.com/in/eric-emery-bb1544279/" className="btn btn-primary">LinkedIn</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+        {/* <div style={containerStyle}>
+        <div className="card text-center" style={cardStyle}>
+          <div className="row">
+            <div className="col-md-4 d-flex align-items-center">
+            </div>
+            <div className="col-md-8">
+            <div className="card-body" style={{ margin: 0 }}>
+                <h5 className="card-title" style={cardTitleStyle}>
+                  Lets Work Together!
+                </h5>
+                <a href="https://github.com/EricDEmery" className="btn btn-primary">Github</a>
+                <a href="https://www.linkedin.com/in/eric-emery-bb1544279/" className="btn btn-primary">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      </>
   );
 }
