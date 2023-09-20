@@ -8,6 +8,28 @@ import backendBistro from './img/backendbistro.jpg';
 import sqlHeros from './img/sqlheros.jpg';
 
 export default function Project() {
+  const sourceCodeButtonStyle = {
+    fontFamily: 'Courier New, monospace',
+    backgroundColor: 'transparent',
+    color: '#61dafb', // Use the blue color from the page's color scheme
+    padding: '0.25rem 0.5rem',
+    outline: 'none',
+    cursor: 'pointer',
+    border: 'none',
+    transition: 'color 0.3s ease', // Transition font color on hover
+  };
+
+  const liveButtonStyle = {
+    fontFamily: 'Courier New, monospace',
+    backgroundColor: 'transparent',
+    color: '#00C853', // Use the green color from the page's color scheme
+    padding: '0.25rem 0.5rem',
+    outline: 'none',
+    cursor: 'pointer',
+    border: 'none',
+    transition: 'color 0.3s ease', // Transition font color on hover
+  };
+
   return (
     <div className="container-fluid custom-background">
       <div className="container pt-3">
@@ -18,8 +40,8 @@ export default function Project() {
               <div className="card-body">
                 <h5 className="card-title title-font">Command Center</h5>
                 <p className="card-text text-font">Command Center is a web application used for tracking real-time Rocket League Statistics. It also houses an LFG feature that allows players to find new teammates to play with. This project was built with NextJS and Django REST Framework.</p>
-                <a href="https://github.com/EricDEmery/Command-Center" className="btn btn-primary mr-2" target="_blank" rel="noopener noreferrer">Source Code Front-End</a>
-                <a href="https://github.com/EricDEmery/command-center-backend" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">Source Code Back-End</a>
+                <a href="https://github.com/EricDEmery/Command-Center" className="btn mr-2" style={sourceCodeButtonStyle} target="_blank" rel="noopener noreferrer">SourceCode Front-End</a>
+                <a href="https://github.com/EricDEmery/command-center-backend" className="btn" style={liveButtonStyle} target="_blank" rel="noopener noreferrer">Source Code Back-End</a>
               </div>
             </div>
           </div>
